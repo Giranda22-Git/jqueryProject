@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="/images/win_10.png" type="image/x-icon">
+    <title>JQuery</title>
+</head>
+<body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/Arr.js"></script>
+<script src="js/rAm.js"></script>
+    <section class="desktop">
+        <div class="file">
+            <div class="combat">
+                <div class="top-container"></div>
+                <div class="bottom-container">
+                    Rick and Morty API
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="left_panel">
+                <div class="win-ico">
+
+                </div>
+                <div class="for-search">
+
+                </div>
+                <input type="text" class="search" placeholder="Введите здесь свой текст для поиска">
+                <div class="loc">
+
+                </div>
+                <div class="IE">
+
+                </div>
+                <div class="file-system">
+
+                </div>
+                <div class="m-store">
+
+                </div>
+                <div class="email-ico">
+
+                </div>
+            </div>
+            <div class="right_panel">
+
+            </div>
+        </div>
+        <div class="modal">
+            <div class="front-modal">
+                <div class="conductor-ico"></div>
+                <div class="dash"></div>
+                <div class="conductor-name">Проводник</div>
+                <svg class="bi bi-x close" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+                </svg>
+                <svg class="bi bi-dash skip" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <div class="nav">
+                    <div class="nav1">Файл</div>
+                    <div class="nav2">Главная</div>
+                    <div class="nav3">Поделиться</div>
+                    <div class="nav4">Вид</div>
+                </div>
+                <svg class="bi bi-arrow-left arrow-left" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="bi bi-arrow-right arrow-right" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                </svg>
+                <svg class="bi bi-chevron-down chevron" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <svg class="bi bi-arrow-up arrow-up" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8 3.707 5.354 6.354a.5.5 0 1 1-.708-.708l3-3z"/>
+                </svg>
+                <div class="path-line"></div>
+                <div class="path-fileICO"></div>
+                <svg class="bi bi-chevron-right path-arrow-right path-arrow-right1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <div class="this-pc">Этот компьютер</div>
+                <svg class="bi bi-chevron-right path-arrow-right path-arrow-right2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <div class="diskC">Локальный диск (C:)</div>
+                <svg class="bi bi-chevron-right path-arrow-right path-arrow-right3" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <div class="PF86">Program Files (x86)</div>
+                <svg class="bi bi-chevron-right path-arrow-right path-arrow-right4" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <div class="RAM">Rick and Morty</div>
+                <svg class="bi bi-chevron-right path-arrow-right path-arrow-right5" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <div class="path-pages"></div>
+                <svg class="bi bi-chevron-down chevron2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <input type="text" class="mini-search" placeholder="   Найти">
+                <svg class="bi bi-search search-loop" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+                <div class="area">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="modal-info">
+            <div class="top-modal-info">
+                <svg class="bi bi-x modal-info-close" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+                </svg>
+                <svg class="bi bi-dash modal-info-dash" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <div class="notebook-ico"></div>
+                <div class="modal-info-top-text">
+                    Безымянный - Блокнот
+                </div>
+                <div class="modal-info-nav">
+                    <div class="nav1">Файл</div>
+                    <div class="nav2">Правка</div>
+                    <div class="nav3">Формат</div>
+                    <div class="nav4">Вид</div>
+                    <div class="nav5">Справка</div>
+                </div>
+            </div>
+            <div class="bottom-modal-info">
+                <div class="left-modal-info">
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+                <div class="right-modal-info">
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-info-location">
+            <div class="top-modal-info">
+                <svg class="bi bi-x modal-info-location-close" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+                </svg>
+                <svg class="bi bi-dash modal-info-dash" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <div class="notebook-ico"></div>
+                <div class="modal-info-top-text-location">
+                    Безымянный - Блокнот
+                </div>
+                <div class="modal-info-nav">
+                    <div class="nav1">Файл</div>
+                    <div class="nav2">Правка</div>
+                    <div class="nav3">Формат</div>
+                    <div class="nav4">Вид</div>
+                    <div class="nav5">Справка</div>
+                </div>
+            </div>
+            <div class="bottom-modal-info">
+                <div class="left-modal-info-location">
+                    <textarea cols="30" rows="10" class="left-modal-info-location-textarea"></textarea>
+                </div>
+                <div class="right-modal-info-location">
+                    <textarea cols="30" rows="10" class="right-modal-info-location-textarea"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="modal-info-episode">
+            <div class="top-modal-info">
+                <svg class="bi bi-x modal-info-episode-close" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+                </svg>
+                <svg class="bi bi-dash modal-info-dash" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.5 8a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <div class="notebook-ico"></div>
+                <div class="modal-info-top-text-episode">
+                    Безымянный - Блокнот
+                </div>
+                <div class="modal-info-nav">
+                    <div class="nav1">Файл</div>
+                    <div class="nav2">Правка</div>
+                    <div class="nav3">Формат</div>
+                    <div class="nav4">Вид</div>
+                    <div class="nav5">Справка</div>
+                </div>
+            </div>
+            <div class="bottom-modal-info">
+                <div class="left-modal-info-episode">
+                    <textarea cols="30" rows="10" class="left-modal-info-episode-textarea"></textarea>
+                </div>
+                <div class="right-modal-info-episode">
+                    <textarea cols="30" rows="10" class="right-modal-info-episode-textarea"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="modal-search">
+            <svg class="bi bi-x modal-search-close" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+            </svg>
+            <div class="result-area">
+
+            </div>
+            <div class="for-search-area">
+                <div class="types-area">
+                    <div class="first-type location">Character</div>
+                    <div class="second-type">Location</div>
+                    <div class="third-type">Episode</div>
+                </div>
+                <div class="filters-area">
+                    <div class="first-filter">
+                        <input type="radio" name="status" id="status1" value="alive">
+                        <label for="status1">alive</label>
+                        
+                        <input type="radio" name="status" id="status2" value="dead">
+                        <label for="status2">dead</label>
+
+                        <input type="radio" name="status" id="status3" value="unknown" checked>
+                        <label for="status3">unknown</label>
+                    </div>
+                    <div class="second-filter">
+                        <input type="radio" name="gender" id="gender1" value="female">
+                        <label for="gender1">female</label>
+                        
+                        <input type="radio" name="gender" id="gender2" value="male">
+                        <label for="gender2">male</label>
+
+                        <input type="radio" name="gender" id="gender3" value="genderless">
+                        <label for="gender3">genderless</label>
+
+                        <input type="radio" name="gender" id="gender4" value="unknown" checked>
+                        <label for="gender4" checked>unknown</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/script.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

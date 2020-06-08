@@ -1,0 +1,713 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.desktop{
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/windows_bg.jpg") center top no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.file{
+    width: 6vw;
+    height: 17vh;
+    cursor: pointer;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+}
+
+.file .combat{
+    width: 100%;
+}
+
+.file .combat .top-container{
+    background: url("../images/yellow.ico") center no-repeat;
+    background-size: 100%;
+}
+
+.panel{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 4vh;
+    background-color: rgb(25, 25, 24);
+    display: flex;
+}
+.left_panel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+.right_panel{
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+}
+.win-ico{
+    width: 3vw;
+    height: 100%;
+    background: url("../images/6805.png") center no-repeat;
+    background-size: 80%;
+    cursor: pointer;
+}
+.for-search{
+    width: 2.5vw;
+    height: 100%;
+    background: url("../images/lopa.png") center no-repeat;
+    background-size: 45%;
+    background-color: white;
+}
+.search{
+    height: 100%;
+    width: 21vw;
+    border: none;
+    font-size: 1vw;
+    outline: none;
+    z-index: 50;
+}
+.email-ico{
+    width: 3vw;
+    height: 100%;
+    background: url("../images/email.png") center no-repeat;
+    background-size: 45%;
+    cursor: pointer;
+}
+.loc{
+    width: 3vw;
+    height: 100%;
+    background: url("../images/loc.png") center no-repeat;
+    background-size: 85%;
+    cursor: pointer;
+}
+.IE{
+    width: 3vw;
+    height: 100%;
+    background: url("../images/IE.png") center no-repeat;
+    background-size: 45%;
+    cursor: pointer;
+}
+.file-system{
+    width: 3vw;
+    height: 100%;
+    background: url("../images/my_files.png") center no-repeat;
+    background-size: 45%;
+    cursor: pointer;
+}
+.m-store{
+    width: 3vw;
+    height: 100%;
+    background: url("../images/microsoft-store.png") center no-repeat;
+    background-size: 65%;
+    cursor: pointer;
+}
+
+.modal{
+    position: absolute;
+    width: 60vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    margin-left: -30vw;
+    margin-top: -40vh;
+    background-color: rgb(25, 25, 24);
+    display: none;
+}
+
+.front-modal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.close{
+    width: 3.5%;
+    height: 4%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.close:hover{
+    fill: rgb(71, 255, 71);
+}
+
+.skip{
+    width: 3.5%;
+    height: 4%;
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    z-index: 11;
+    cursor: pointer;   
+}
+
+.skip:hover{
+    fill: rgb(71, 255, 71);
+}
+
+.conductor-ico{
+    position: absolute;
+    width: 3.5%;
+    height: 4%;
+    left: 1%;
+    top: 1%;
+    background: url("../images/my_files.png") center no-repeat;
+    background-size: 65%;
+}
+
+.dash{
+    position: absolute;
+    width: 0.2%;
+    height: 3%;
+    left: 5.5%;
+    top: 1.5%;
+    background-color: white;
+}
+
+.conductor-name{
+    position: absolute;
+    left: 7%;
+    top: 1.2%;
+    color: white;
+    font-size: 2.1vh;
+}
+
+.nav{
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    top: 7%;
+    left: 0;
+    display: flex;
+    color: white;
+    font-size: 1.5vh;
+}
+
+.nav .nav1{
+    width: 7%;
+    background-color: rgb(19, 102, 204);
+    text-align: center;
+    line-height: 170%;
+    cursor: pointer;
+}
+
+.nav .nav2{
+    width: 10%;
+    text-align: center;
+    line-height: 170%;
+    cursor: pointer;
+}
+
+.nav .nav3{
+    width: 10%;
+    text-align: center;
+    line-height: 170%;
+    cursor: pointer;
+}
+
+.nav .nav4{
+    width: 6%;
+    text-align: center;
+    line-height: 170%;
+    cursor: pointer;
+}
+
+.arrow-left{
+    position: absolute;
+    width: 3%;
+    top: 12%;
+    left: 1%;
+    fill: rgb(215, 215, 215);
+    cursor: pointer;
+}
+
+.arrow-right{
+    position: absolute;
+    width: 3%;
+    top: 12%;
+    left: 5%;
+    fill: rgb(115, 115, 115);
+    cursor: pointer;
+}
+
+.chevron{
+    position: absolute;
+    width: 1.3%;
+    top: 13.4%;
+    left: 9.5%;
+    fill: rgb(215, 215, 215);
+    cursor: pointer;
+}
+
+.arrow-up{
+    position: absolute;
+    width: 2.5%;
+    top: 12.3%;
+    left: 11.5%;
+    fill: rgb(215, 215, 215);
+    cursor: pointer;
+}
+
+.path-line{
+    position: absolute;
+    width: 67%;
+    height: 4%;
+    top: 12%;
+    left: 15%;
+    border: 1px solid rgb(61, 55, 55);
+}
+
+.path-fileICO{
+    position: absolute;
+    width: 2.5%;
+    height: 2.7%;
+    top: 12.85%;
+    left: 15.3%;
+    background: url("/images/yellow.ico") center no-repeat;
+    background-size: cover;
+}
+
+.path-arrow-right{
+    position: absolute;
+    width: 2.5%;
+    height: 1.5%;
+    top: 13.4%;
+    fill: white;
+}
+
+.path-arrow-right1{
+    left: 18%;
+}
+
+.path-arrow-right2{
+    left: 31%;
+}
+
+.path-arrow-right3{
+    left: 46%;
+}
+
+.path-arrow-right4{
+    left: 60%;
+}
+
+.path-arrow-right5{
+    left: 71.6%;
+}
+
+.this-pc{
+    position: absolute;
+    width: 10%;
+    height: 3%;
+    top: 13%;
+    left: 21%;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.diskC{
+    position: absolute;
+    width: 12%;
+    height: 3%;
+    top: 13%;
+    left: 33.8%;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.PF86{
+    position: absolute;
+    width: 12%;
+    height: 3%;
+    top: 13%;
+    left: 48.8%;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.RAM{
+    position: absolute;
+    width: 12%;
+    height: 3%;
+    top: 13%;
+    left: 62.7%;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.path-pages{
+    position: absolute;
+    width: 12%;
+    height: 3%;
+    top: 13%;
+    left: 74.5%;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.chevron2{
+    position: absolute;
+    width: 1.3%;
+    height: 3%;
+    top: 12.9%;
+    left: 79.6%;
+    fill: rgb(215, 215, 215);
+    cursor: pointer;
+}
+
+.mini-search{
+    position: absolute;
+    width: 16.65%;
+    height: 3.8%;
+    top: 12%;
+    left: 83%;
+    outline: none;
+    background-color: rgb(25, 25, 24);
+    border: 1px solid rgb(61, 55, 55);
+    color: white;
+    font-size: 1.4vh;
+}
+
+.search-loop{
+    position: absolute;
+    width: 1.6%;
+    height: 3%;
+    top: 12.7%;
+    left: 97.5%;
+    fill: rgb(115, 115, 115);
+    cursor: pointer;
+}
+
+.area, .areaPage{
+    position: absolute;
+    width: 97.8%;
+    height: 79%;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 1%;
+    padding: 1%;
+    overflow-y: auto;
+}
+
+.areaPage{
+    display: none;
+}
+
+.top-container{
+    width: 100%;
+    height: 75%;
+    background: url("/images/yellow.ico") center no-repeat;
+    background-size: 90%;
+    margin: 0 auto;
+}
+
+.top-page-container{
+    width: 100%;
+    height: 75%;
+    background: url("/images/Notepad.png") center no-repeat;
+    background-size: 70%;
+    margin: 0 auto;
+}
+
+.bottom-container, .bottom-page-container{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    line-height: 140%;
+    color: white;
+    font-size: 1.4vh;
+    margin: 0 auto;
+}
+
+.combat{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.click-bg{
+    background-color: rgba(0, 107, 238, 0.404);
+}
+
+.modal-info{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    left: 50%;
+    top: 50%;
+    margin-left: -25vw;
+    margin-top: -25vh;
+    background-color: rgb(25, 25, 24);
+    border: 1px solid lightblue;
+    display: none;
+}
+
+.modal-info-location, .modal-info-episode{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    left: 70%;
+    top: 50%;
+    margin-left: -25vw;
+    margin-top: -25vh;
+    background-color: rgb(25, 25, 24);
+    border: 1px solid lightblue;
+    display: none;
+}
+
+.top-modal-info{
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+.bottom-modal-info{
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+
+.left-modal-info-location, .right-modal-info-location,
+.left-modal-info-episode, .right-modal-info-episode,
+.left-modal-info, .right-modal-info{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.modal-info-location-close, .modal-info-episode-close, .modal-info-close{
+    width: 2.5vw;
+    height: 3vh;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    cursor: pointer;
+    fill: white;
+}
+
+.modal-info-dash{
+    width: 2.5vw;
+    height: 3vh;
+    position: absolute;
+    right: 2.5vw;
+    top: 5%;
+    cursor: pointer;
+    fill: white;
+}
+
+.modal-info-close:hover, .modal-info-dash:hover,
+.modal-info-episode-close:hover, .modal-info-episode-dash:hover,
+.modal-info-location-close:hover, .modal-info-location-dash:hover
+{
+    fill: rgb(71, 255, 71);
+}
+
+.notebook-ico{
+    position: absolute;
+    width: 3vw;
+    height: 3vh;
+    left: 0;
+    top: 5%;
+    background: url("../images/Notepad.png") center no-repeat;
+    background-size: 50%;
+}
+
+.modal-info-top-text, .modal-info-top-text-location, .modal-info-top-text-episode{
+    color: white;
+    position: absolute;
+    font-size: 1.5vh;
+    left: 3.2vw;
+    top: 5%;
+    width: 25vw;
+    height: 3vh;
+    line-height: 3vh;
+}
+
+.modal-info-nav{
+    position: absolute;
+    width: 50%;
+    height: 3vh;
+    display: flex;
+    font-size: 1.4vh;
+    top: 3.9vh;
+    left: 0;
+    color: white;
+}
+
+.modal-info-nav *{
+    width: 15%;
+    line-height: 3vh;
+    text-align: center;
+}
+
+.modal-info textarea, .modal-info-location textarea, .right-modal-info-location textarea,
+.left-modal-info-episode textarea, .right-modal-info-episode textarea
+{
+    width: 96.5%;
+    height: 96.5%;
+    outline:none;
+    font-size: 1.6vh;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-left: 3%;
+    line-height: 2.4vh;
+}
+
+.modal-search{
+    position: absolute;
+    height: 60vh;
+    width: 35vw;
+    font-size: 1vw;
+    color: white;
+    bottom: 4vh;
+    left: 3vw;
+    background-color: rgb(25, 25, 24);
+    display: none;
+}
+.result-area{
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+    position: relative;
+}
+
+.modal-search-close{
+    position: absolute;
+    width: 3vw;
+    height: 3vh;
+    fill: white;
+    right: 0;
+    top: 1%;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.character-box{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.image-character{
+    width: 20%;
+    height: 100%;
+}
+
+.stats-character{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    font-size: 2vh;
+}
+
+.name-char, .gender-char, .status-char, .species-char{
+    position: absolute;
+    width: 98%;
+    height: 25%;
+    left: 2%;
+    line-height: 160%;
+}
+
+.name-char{ top: 0; }
+.gender-char{ top: 25% }
+.status-char{ top: 50% }
+.species-char{ top: 75% }
+
+
+
+
+
+.for-search-area{
+    width: 100%;
+    height: 20%;
+}
+
+.types-area{
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    text-align: center;
+    line-height: 145%;
+    cursor: pointer;
+}
+
+.types-area *{
+    width: 33.33333%;
+}
+
+.location{
+    background: rgb(19, 102, 204);
+}
+
+.filters-area{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    font-size: 2vh !important;
+}
+
+.first-filter{
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 0;
+}
+
+.second-filter{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+}
+
+.first-filter input, .second-filter input{
+    margin: none !important;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 1.8vw;
+}
+
+.location-box, .episode-box{
+    position: relative;
+    width: 100%;
+    height: 8%;
+    border-bottom: 1px solid white;
+    display: flex;
+    font-size: 2vh;
+    line-height: 230%;
+}
+
+.id-location, .id-episode{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+    left: 2%;
+}
+
+.name-location, .name-episode{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 15%;
+}
