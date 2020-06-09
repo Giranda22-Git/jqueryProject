@@ -126,8 +126,6 @@ $(document).ready(function(){
                 pathArrowRight.hide();
                 pathPages.text(``);
             })
-
-            console.log(event);
         }
     })
     
